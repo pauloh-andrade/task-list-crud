@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Board</title>
+    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main>
+      <section id="form-container">
+        <form action="#" method="get">
+          <fieldset id="task-inputs">
+            <legend>Cadastro de Tarefas</legend>
+            <div class="flex column">
+              <label for="task-title">Titulo</label>
+              <input
+                class="text-field"
+                type="text"
+                name="task"
+                id="task-title"
+                placeholder="Digite o nome da nova Tarefa"
+              />
+            </div>
+            <div class="flex column">
+              <label for="task-description">Descrição</label>
+              <input
+                class="text-field"
+                type="text"
+                name="task"
+                id="task-description"
+                placeholder="Digite a descrição da tarefa"
+              />
+            </div>
+            <div class="flex column">
+              <label for="task-departament">Departamento</label>
+              <select class="text-field" id="task-departament">
+                <option selected>selecionar departamento</option>
+                <option>Desenvolvimento de Software</option>
+                <option>Suporte Técnico</option>
+                <option>Design e Experiência do Usuário</option>
+                <option>Pesquisa e Desenvolvimento</option>
+              </select>
+            </div>
+            <div class="flex column">
+              <label for="task-priority">Prioridade</label>
+              <select class="text-field" id="task-priority">
+                <option selected>selecionar prioridade</option>
+                <option value="1">Baixa</option>
+                <option value="2">Moderada</option>
+                <option value="3">Alta</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit" id="add-btn">Adicionar</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <section id="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Titulo</th>
+              <th>Descrição</th>
+              <th>Departamento</th>
+              <th>Prioridade</th>
+              <th>Duração</th>
+              <th>Valor</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7">
+                <button type="submit" id="priority-btn">Criar lista de prioridades</button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <div id="priority-list-container">
+          <h1>Lista de Prioridade</h1>
+          <ol id="priority-list"></ol>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
