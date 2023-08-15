@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #414141;
+  }
+  #register-bar {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    gap: 10px;
+  }
+  #register-bar input {
+    width: 100%;
+    max-width: 650px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  
+  #register-bar button {
+    width: 40px;
+    height: 40px;
+    background-color: #77e277;
+    color: white;
+    font-size: 35px;
+    border: 1px solid #42b14b;
+    border-radius: 3px;
+  }
+  
+  #register-bar button:hover {
+    cursor: pointer;
+    background-color: #42b14b;
+    transition: all ease-in 0.4s;
+  }
+  
+  #main-container {
+    width: 100%;
+    max-width: 700px;
+    min-width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #to-do-container {
+    width: 100%;
+    max-width: 700px;
+    min-width: 200px;
+    height: auto;
+    min-height: 100px;
+    border-radius: 6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+  }
+  
+  #to-do-container .to-do-item {
+    width: auto;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  
+  .to-do-item .task {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 20px;
+  }
+  
+  .to-do-item div p {
+    font-size: 14px;
+  }
+  
+  .to-do-item button {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ffbcbc;
+    border: 0;
+  }
+  
+  .to-do-item button:hover {
+    cursor: pointer;
+  }
+  
+  .to-do-item button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .enumerator {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(100, 100, 100);
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .show {
+    display: flex;
+  }
