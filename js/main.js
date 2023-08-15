@@ -23,7 +23,7 @@ const renderList = () => {
       <td>${item.title}</td>
       <td>${item.description}</td>
       <td>${item.departament}</td>
-      <td>${item.priority}</td>
+      <td>${item.priority == 1 ? 'Baixa' : item.priority == 2 ? 'Moderada' : 'Alta'}</td>
       <td>
         ${
           item.duration
