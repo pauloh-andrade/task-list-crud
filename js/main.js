@@ -30,7 +30,7 @@ const renderList = () => {
             ? item.duration
             : `
               <select class="text-field medium">
-                <option value="" selected>selecionar duração</option>
+                <option value="--" selected>--</option>
                 <option>1h</option>
                 <option>2h</option>
                 <option>4h</option>
@@ -47,7 +47,7 @@ const renderList = () => {
         ${
           item.price
             ? item.price
-            : `<input class="text-field medium" type="number" name="task" placeholder="adicionar valor" /><button class="ico-button" data-index=${i} data-action="add-price">+</button>`
+            : `<input class="text-field medium" type="number" name="task" placeholder="valor" /><button class="ico-button" data-index=${i} data-action="add-price">+</button>`
         }
       </td>
       <td><button class="ico-button delete-btn" data-index=${i}>x</button></td>
@@ -97,7 +97,7 @@ const handleClickTbody = ({ target }) => {
     td.innerHTML = taskList[index].duration
   } else if (action == 'add-price') {
     const priceInput = target.previousElementSibling
-    taskList[index].price = `R$ ${priceInput.value},00`
+    taskList[index].price = `R$ ${priceInput.value || 0},00`
 
     const td = priceInput.parentNode
     td.innerHTML = taskList[index].price

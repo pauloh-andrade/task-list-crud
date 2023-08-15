@@ -20,13 +20,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
     padding: 100px;
   }
   
   table {
     width: 100%;
-  
+
     min-width: 200px;
     min-height: 508px;
     background-color: white;
@@ -41,7 +42,7 @@
     margin-top: 20px;
   }
   td {
-    padding: 10px;
+    padding: 3px;
     height: 30px;
   }
   ul {
@@ -51,6 +52,7 @@
     border-radius: 5px;
     gap: 20px;
   }
+
   #priority-list-container {
     margin-top: 20px;
     position: absolute;
@@ -62,13 +64,17 @@
   }
   
   #table-container {
-    width: 70%;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 500px;
   }
   
   #form-container {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 500px;
     background-color: white;
     padding: 30px;
     border-radius: 5px;
